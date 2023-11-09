@@ -5,17 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Our Bright Journey</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+<nav class="navbar  is-transparent" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+            <img src="bilder/light-bulb.png" height="60" alt="gluehbirne">
+            <img class="lichtschalter" src="bilder/light%20switch.png" alt="lichtschalter">
+        </a>
+
+        <a role="button" class="navbar-burger has-text-white" aria-label="menu" aria-expanded="false"
+           data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <a class="navbar-item has-text-white" href="index.html">
+                    Startseite
+                </a>
+
+                <a class="navbar-item has-text-white" href="about-us.html">
+                    Über uns
+                </a>
+
+                <div class="navbar-item has-dropdown is-hoverable has-text-white">
+                    <a class="navbar-link has-text-white">
+                        Navigation
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="prestudies.html">
+                            Prestudies
+                        </a>
+                        <a class="navbar-item" href="training.html">
+                            Training
+                        </a>
+                        <a class="navbar-item" href="graduation.html">
+                            Graduation
+                        </a>
+                        <!--                        <hr class="navbar-divider">-->
+                        <!--                        <a class="navbar-item">-->
+                        <!--                            Report an issue-->
+                        <!--                        </a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
 <section class="section">
-    <div class="container">
+    <div class="container has-text-centered is-v-centered">
         <h1 class="title">
-            Hello World
+            Entwickelt von:
         </h1>
         <p class="subtitle">
-            My first website with <strong>Bulma</strong>!
+            Viviane:
+            Lilly:
+            Leonie: <img height="200" src="bilder/bunny.jpg" alt="häschen">
         </p>
     </div>
 </section>
+<footer class="footer">
+    <div class="content has-text-centered has-text-white is-large">
+        <span class="icon">  <i class="fas fa-envelope"></i></span>
+        <span class="icon">  <i class="fa-brands fa-instagram"></i></span>
+    </div>
+</footer>
 </body>
 </html>
