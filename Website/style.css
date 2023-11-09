@@ -1,5 +1,10 @@
 .navbar {
     background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.lichtschalter {
+    filter: invert();
 }
 
 .footer {
