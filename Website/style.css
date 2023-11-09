@@ -12,7 +12,10 @@ img {
 .lichtschalter {
     filter: invert();
 }
-
+.columns {
+    height:33.3%;
+    width:50%;
+}
 .footer {
     background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
 }
