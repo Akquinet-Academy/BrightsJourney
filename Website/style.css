@@ -1,7 +1,13 @@
+/*@import "node_modules/bulma/sass/utilities/functions.sass";*/
+
 html, body { height: 100vh; }
 
 img {
     width: 50%;
+}
+
+.logo {
+    width: 20%;
 }
 
 .navbar {
@@ -17,10 +23,7 @@ img {
     background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
 }
 
-/*.navbar-item:hover {*/
-/*    background-color: purple;*/
-/*}*/
-
+/*$input-arrow: $white;*/
 .navbar-dropdown::before {
     color: white;
 }
@@ -28,4 +31,8 @@ img {
 .button {
     background: rgb(60, 16, 83);
     color: white;
+}
+
+.is-link {
+    color: whitesmoke; !important;
 }
