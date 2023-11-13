@@ -125,3 +125,19 @@ html, body {
     background-image: url("bilder/Pfad.png");
     background-size: 100% auto;
 }
+
+.kontaktbild {
+    border-radius: 10%;
+}
+
+.card {
+    border-radius: 10%;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: rgb(173, 83, 137);
+}
