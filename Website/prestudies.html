@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+
 <nav class="navbar  is-transparent" id="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
         <a class="navbar-item">
@@ -64,6 +65,9 @@
         </div>
     </div>
 </nav>
+<div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+</div>
 <section class="section">
     <div class="container has-text-centered is-vcentered">
         <h1 class="title">
@@ -97,6 +101,18 @@
         <div class="button is-rounded"><a href="training.html">Prestudies fertig? Auf zum Training!</a></div>
     </div>
 </section>
+
+<script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+
+    function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+    }
+</script>
 <footer class="footer" id="footer">
     <div class="content has-text-centered has-text-white is-large">
         <span class="icon">  <i class="fas fa-envelope"></i></span>
@@ -119,6 +135,31 @@
         schalterOben.classList.toggle("switch-off")
         schalterUnten.classList.toggle("switch-on");
     }
+    document.addEventListener('DOMContentLoaded', () => {
+
+        // Holen Sie sich alle Burger-Menü-Elemente basierend auf ihre Klasse
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Überprüfen Sie, ob Burger-Menü-Elemente vorhanden sind
+        if ($navbarBurgers.length > 0) {
+
+            // Schleife durch jedes Burger-Menü-Element
+            $navbarBurgers.forEach( el => {
+                el.addEventListener('click', () => {
+
+                    // Holen Sie sich das Ziel aus dem 'data-target'-Attribut
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+
+                    // Schalten Sie die 'is-active'-Klasse auf beide das Burger-Menü und das Ziel-Menü
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+
+                });
+            });
+        }
+    });
+
 </script>
 </body>
 </html>

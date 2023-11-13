@@ -124,6 +124,19 @@ html, body {
     height: 80%;
     width: 90%;
 }
+.navbar-menu.is-active a.navbar-item,
+.navbar-menu.is-active .navbar-dropdown a.navbar-item {
+    color: purple !important;
+}
+
+.progress-bar {
+    height: 10px;
+    background: rgb(173, 83, 137);
+    width: 0%;
+    z-index: 1;
+    bottom:0;
+    position:fixed;
+}
 
 .hintergrund {
     background-image: url("bilder/Pfad.png");
