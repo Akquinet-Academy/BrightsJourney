@@ -34,7 +34,7 @@ html, body {
 }
 
 .navbar {
-    background-color: rgb(60, 16, 83);
+    background-color:  rgb(60, 16, 83);
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
@@ -66,12 +66,12 @@ html, body {
 }
 
 .columns {
-    height: 33.3%;
-    width: 50%;
+    height:33.3%;
+    width:50%;
 }
 
 .footer {
-    background-color: rgb(60, 16, 83);
+    background-color:  rgb(60, 16, 83);
 }
 
 .navbar-dropdown::before {
