@@ -99,6 +99,31 @@
         schalterOben.classList.toggle("switch-off")
         schalterUnten.classList.toggle("switch-on");
     }
+    document.addEventListener('DOMContentLoaded', () => {
+
+        // Holen Sie sich alle Burger-Menü-Elemente basierend auf ihre Klasse
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Überprüfen Sie, ob Burger-Menü-Elemente vorhanden sind
+        if ($navbarBurgers.length > 0) {
+
+            // Schleife durch jedes Burger-Menü-Element
+            $navbarBurgers.forEach( el => {
+                el.addEventListener('click', () => {
+
+                    // Holen Sie sich das Ziel aus dem 'data-target'-Attribut
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+
+                    // Schalten Sie die 'is-active'-Klasse auf beide das Burger-Menü und das Ziel-Menü
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+
+                });
+            });
+        }
+    });
+
 </script>
 </body>
 </html>

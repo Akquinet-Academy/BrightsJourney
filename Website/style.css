@@ -119,3 +119,7 @@ html, body {
     height: 80%;
     width: 90%;
 }
+.navbar-menu.is-active a.navbar-item,
+.navbar-menu.is-active .navbar-dropdown a.navbar-item {
+    color: purple !important;
+}
