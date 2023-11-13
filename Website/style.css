@@ -121,9 +121,12 @@ html, body {
     width: 90%;
 }
 .progress-bar {
-    height: 8px;
-    background: #04AA6D;
+    height: 10px;
+    background: rgb(173, 83, 137);
     width: 0%;
+    z-index: 1;
+    bottom:0;
+    position:fixed;
 }
 
 .hintergrund {
