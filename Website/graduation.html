@@ -9,11 +9,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-<nav class="navbar  is-transparent" role="navigation" aria-label="main navigation">
+<nav class="navbar  is-transparent" id="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-        <a class="navbar-item" href="index.html">
-            <img src="bilder/light-bulb.png" height="60" alt="gluehbirne">
-            <img class="lichtschalter" src="bilder/switch-down.png" alt="lichtschalter">
+        <a class="navbar-item">
+            <div class="glühbirnen">
+                <img class="gluehbirne-an" id="lampe-an" src="bilder/light-bulb.png" alt="gluehbirne">
+                <img class="gluehbirne-aus" id="lampe-aus" src="bilder/light-bulb-off.png" alt="gluehbirne">
+            </div>
+            <img class="lichtschalter-aus" id="lichtschalter-aus" onclick="toggleLicht()" src="bilder/switch-up-small.png" alt="lichtschalter">
+            <img class="lichtschalter-an" id="lichtschalter-an" src="bilder/switch-down-small.png">
         </a>
 
         <a role="button" class="navbar-burger has-text-white" aria-label="menu" aria-expanded="false"
@@ -76,11 +80,28 @@
         <div>...learning still in progress!</div>
     </div>
 </section>
-<footer class="footer">
+<footer class="footer" id="footer">
     <div class="content has-text-centered has-text-white is-large">
         <span class="icon">  <i class="fas fa-envelope"></i></span>
         <span class="icon">  <i class="fa-brands fa-instagram"></i></span>
     </div>
 </footer>
+<script>
+    const licht = document.getElementById("lampe-an");
+    const lichtAus = document.getElementById("lampe-aus");
+    const hintergrundHell = document.getElementById("navbar");
+    const footerHell = document.getElementById("footer");
+    const schalterOben = document.getElementById("lichtschalter-aus");
+    const schalterUnten = document.getElementById("lichtschalter-an");
+
+    function toggleLicht(){
+        licht.classList.toggle("on");
+        lichtAus.classList.toggle("off");
+        hintergrundHell.classList.toggle("backgroundLight");
+        footerHell.classList.toggle("footerLight");
+        schalterOben.classList.toggle("switch-off")
+        schalterUnten.classList.toggle("switch-on");
+    }
+</script>
 </body>
 </html>
