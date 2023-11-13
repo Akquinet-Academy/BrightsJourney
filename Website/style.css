@@ -23,29 +23,39 @@ img {
 }
 
 .navbar {
-    background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
+    background-color:  rgb(60, 16, 83);
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
+.gluehbirnen{
+    position: relative;
+}
+.gluehbirne-an{
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.gluehbirne-aus{
+    position: relative;
+    z-index: 1;
+    left: -32px;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
 .lichtschalter {
     filter: invert();
+    left: -32px;
+    top: -3px;
+    position: relative;
 }
 .columns {
     height:33.3%;
     width:50%;
 }
 .footer {
-    background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
-    /*display: flex;*/
-    width: 100%;
-    bottom: 0!important;
-    position: sticky;
-    /*margin-top: auto;*/
+    background-color:  rgb(60, 16, 83);
 }
-
-/*.navbar-item:hover {*/
-/*    background-color: purple;*/
-/*}*/
 
 .navbar-dropdown::before {
     color: white;
@@ -54,4 +64,16 @@ img {
 .button {
     background: rgb(60, 16, 83);
     color: white;
+}
+.on{
+    opacity: 1;
+}
+.off{
+    opacity: 0;
+}
+.backgroundLight{
+    background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
+}
+.footerLight{
+    background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
 }
