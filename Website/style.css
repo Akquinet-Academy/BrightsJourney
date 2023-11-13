@@ -98,7 +98,13 @@ html, body {
 .footerLight {
     background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
 }
+
 .container {
     height: 80%;
     width: 90%;
+}
+.progress-bar {
+    height: 8px;
+    background: #04AA6D;
+    width: 0%;
 }
