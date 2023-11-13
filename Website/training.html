@@ -16,7 +16,8 @@
                 <img class="gluehbirne-an" id="lampe-an" src="bilder/light-bulb.png" alt="gluehbirne">
                 <img class="gluehbirne-aus" id="lampe-aus" src="bilder/light-bulb-off.png" alt="gluehbirne">
             </div>
-            <img class="lichtschalter-aus" id="lichtschalter-aus" onclick="toggleLicht()" src="bilder/switch-up-small.png" alt="lichtschalter">
+            <img class="lichtschalter-aus" id="lichtschalter-aus" onclick="toggleLicht()"
+                 src="bilder/switch-up-small.png" alt="lichtschalter">
             <img class="lichtschalter-an" id="lichtschalter-an" src="bilder/switch-down-small.png">
         </a>
 
@@ -70,17 +71,73 @@
 </div>
 
 <section class="section">
+    <div class="container has-text-centered">
+        <h1 class="title">
+            12 Wochen Training
+        </h1>
+    </div>
     <div class="hintergrund">
-        <div class="container has-text-centered is-vcentered">
+        <div class="container has-text-left">
             <h1 class="title">
-                Hallo du!
+                Woche 1 & Woche 2
             </h1>
             <p class="subtitle">
-                Starte deine virtuelle Lernreise mit Brights!
+                Lerne, Java zu programmieren!
             </p>
-            <div class="button is-rounded"><a href="graduation.html">Auf zur Abschlussfeier!</a></div>
+            <img class="logo" src="bilder/java-logo.png" alt="java">
+            <p class="subtitle">
+                Lerne Präsentationstechniken kennen!
+            </p>
+            <img src="bilder/undraw_Business_plan_re_0v81.png" class="undraw" alt="präsentation">
         </div>
+
+
+        <div class="container has-text-right">
+            <h1 class="title">
+                Woche 3
+            </h1>
+            <p class="subtitle">
+                GitHub und Versionskontrolle
+            </p>
+            <img src="bilder/github.png" class="logo" alt="github">
+            <p class="subtitle">
+                Programmiere deinen eigenen Telegram-Bot!
+            </p>
+            <img class="logo" src="bilder/Telegram_logo.svg.png" alt="telegram">
+        </div>
+
+        <div class="container has-text-left">
+            <h1 class="title">
+                Woche 4
+            </h1>
+            <p class="subtitle">
+                Prüfung und Zeitmanagement
+            </p>
+            <img src="bilder/undraw_Time_management_re_tk5w.png" class="undraw" alt="zeitmanagement">
+        </div>
+
+        <div class="container has-text-right">
+            <h1 class="title">
+                Woche 5 & Woche 6
+            </h1>
+            <p class="subtitle">
+                Baue im Team deine eigene Website! Lerne agile Methoden kennen!
+            </p>
+            <img src="bilder/undraw_engineering_team_a7n2.svg" class="undraw" alt="teamwork">
+            <img src="bilder/scrum.svg" alt="scrum" class="logo">
+        </div>
+
+        <div class="container has-text-left">
+            <h1 class="title">
+                to be continued...
+            </h1>
+        </div>
+
     </div>
+</section>
+<section class="section has-text-centered">
+    <br>
+    <div class="button is-rounded"><a href="graduation.html">Auf zur Abschlussfeier!</a></div>
 </section>
 <footer class="footer" id="footer">
     <div class="content has-text-centered has-text-white is-large">
@@ -96,7 +153,7 @@
     const schalterOben = document.getElementById("lichtschalter-aus");
     const schalterUnten = document.getElementById("lichtschalter-an");
 
-    function toggleLicht(){
+    function toggleLicht() {
         licht.classList.toggle("on");
         lichtAus.classList.toggle("off");
         hintergrundHell.classList.toggle("backgroundLight");

@@ -1,15 +1,16 @@
 html, body {
-    height: 100vh;
+    height: 100%;
     margin: 0;
     box-sizing: border-box;
 }
 
 .undraw {
-    width: 50%;
+    width: 30%;
 }
 
 .logo {
-    width: 20%;
+    max-width: 20%;
+    ;
 }
 
 *, *:before, *:after {
@@ -83,6 +84,9 @@ html, body {
 
 .footer {
     background-color: rgb(60, 16, 83);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .navbar-dropdown::before {
@@ -136,7 +140,8 @@ html, body {
 
 .hintergrund {
     background-image: url("bilder/Pfad.png");
-    background-size: 100% auto;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .kontaktbild {
