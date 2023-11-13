@@ -115,6 +115,7 @@ html, body {
 .footerLight {
     background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
 }
+
 .container {
     height: 80%;
     width: 90%;
@@ -122,4 +123,34 @@ html, body {
 .navbar-menu.is-active a.navbar-item,
 .navbar-menu.is-active .navbar-dropdown a.navbar-item {
     color: purple !important;
+}
+
+.progress-bar {
+    height: 10px;
+    background: rgb(173, 83, 137);
+    width: 0%;
+    z-index: 1;
+    bottom:0;
+    position:fixed;
+}
+
+.hintergrund {
+    background-image: url("bilder/Pfad.png");
+    background-size: 100% auto;
+}
+
+.kontaktbild {
+    border-radius: 10%;
+}
+
+.card {
+    border-radius: 10%;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: rgb(173, 83, 137);
 }
