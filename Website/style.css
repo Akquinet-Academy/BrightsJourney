@@ -3,6 +3,12 @@ html, body { height: 100vh; margin:0; box-sizing: border-box; }
 img {
     width: 50%;
 }
+
+.logo {
+    width: 20%;
+}
+
+.navbar {
 *, *:before, *:after {
     box-sizing: inherit;
 }
