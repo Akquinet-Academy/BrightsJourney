@@ -16,7 +16,8 @@
                 <img class="gluehbirne-an" id="lampe-an" src="bilder/light-bulb.png" alt="gluehbirne">
                 <img class="gluehbirne-aus" id="lampe-aus" src="bilder/light-bulb-off.png" alt="gluehbirne">
             </div>
-            <img class="lichtschalter" id="lichtschalter" onclick="toggleLicht()" src="bilder/switch-down-small.png" alt="lichtschalter">
+            <img class="lichtschalter-aus" id="lichtschalter-aus" onclick="toggleLicht()" src="bilder/switch-up-small.png" alt="lichtschalter">
+            <img class="lichtschalter-an" id="lichtschalter-an" src="bilder/switch-down-small.png">
         </a>
 
         <a role="button" class="navbar-burger has-text-white" aria-label="menu" aria-expanded="false"
@@ -83,18 +84,21 @@
 </footer>
 
 <script>
-    let licht = document.getElementById("lampe-an");
-    let lichtAus = document.getElementById("lampe-aus");
-    let hintergrundHell = document.getElementById("navbar");
-    let footerHell = document.getElementById("footer");
+    const licht = document.getElementById("lampe-an");
+    const lichtAus = document.getElementById("lampe-aus");
+    const hintergrundHell = document.getElementById("navbar");
+    const footerHell = document.getElementById("footer");
+    const schalterOben = document.getElementById("lichtschalter-aus");
+    const schalterUnten = document.getElementById("lichtschalter-an");
 
     function toggleLicht(){
         licht.classList.toggle("on");
         lichtAus.classList.toggle("off");
         hintergrundHell.classList.toggle("backgroundLight");
         footerHell.classList.toggle("footerLight");
+        schalterOben.classList.toggle("switch-off")
+        schalterUnten.classList.toggle("switch-on");
     }
-
 </script>
 </body>
 </html>

@@ -34,7 +34,7 @@ html, body {
 }
 
 .navbar {
-    background-color:  rgb(60, 16, 83);
+    background-color: rgb(60, 16, 83);
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
@@ -53,25 +53,36 @@ html, body {
 .gluehbirne-aus {
     position: relative;
     z-index: 1;
-    left: -32px;
+    left: -32.5px;
     opacity: 1;
     transition: opacity 0.5s;
 }
 
-.lichtschalter {
+.lichtschalter-aus{
     filter: invert();
-    left: -32px;
+    left: -33.5px;
     top: -3px;
     position: relative;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+.lichtschalter-an{
+    filter: invert();
+    left: -56px;
+    top: -3px;
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.5s;
 }
 
 .columns {
-    height:33.3%;
-    width:50%;
+    height: 33.3%;
+    width: 50%;
 }
 
 .footer {
-    background-color:  rgb(60, 16, 83);
+    background-color: rgb(60, 16, 83);
 }
 
 .navbar-dropdown::before {
@@ -89,6 +100,12 @@ html, body {
 
 .off {
     opacity: 0;
+}
+.switch-off{
+    opacity: 0;
+}
+.switch-on{
+    opacity: 1;
 }
 
 .backgroundLight {
