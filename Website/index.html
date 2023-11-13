@@ -9,11 +9,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-<nav class="navbar  is-transparent" role="navigation" aria-label="main navigation">
+<nav class="navbar  is-transparent" id="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-        <a class="navbar-item" href="index.html">
-            <img src="light-bulb.png" height="60" alt="gluehbirne">
-            <img class="lichtschalter" src="light%20switch.png" alt="lichtschalter">
+        <a class="navbar-item">
+            <div class="glühbirnen">
+                <img class="gluehbirne-an" id="lampe-an" src="light-bulb.png" alt="gluehbirne">
+                <img class="gluehbirne-aus" id="lampe-aus" src="light-bulb (1).png" alt="gluehbirne">
+            </div>
+            <img class="lichtschalter" id="lichtschalter" onclick="toggleLicht()" src="light%20switch.png" alt="lichtschalter">
         </a>
 
         <a role="button" class="navbar-burger has-text-white" aria-label="menu" aria-expanded="false"
@@ -72,11 +75,26 @@
         <div class="button is-rounded">Klick</div>
     </div>
 </section>
-<footer class="footer">
+<footer class="footer" id="footer">
     <div class="content has-text-centered has-text-white is-large">
         <span class="icon">  <i class="fas fa-envelope"></i></span>
         <span class="icon">  <i class="fa-brands fa-instagram"></i></span>
     </div>
 </footer>
+
+<script>
+    let licht = document.getElementById("lampe-an");
+    let lichtAus = document.getElementById("lampe-aus");
+    let hintergrundHell = document.getElementById("navbar");
+    let footerHell = document.getElementById("footer");
+
+    function toggleLicht(){
+        licht.classList.toggle("on");
+        lichtAus.classList.toggle("off");
+        hintergrundHell.classList.toggle("backgroundLight");
+        footerHell.classList.toggle("footerLight");
+    }
+
+</script>
 </body>
 </html>
