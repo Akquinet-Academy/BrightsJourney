@@ -16,7 +16,8 @@
                 <img class="gluehbirne-an" id="lampe-an" src="bilder/light-bulb.png" alt="gluehbirne">
                 <img class="gluehbirne-aus" id="lampe-aus" src="bilder/light-bulb-off.png" alt="gluehbirne">
             </div>
-            <img class="lichtschalter" id="lichtschalter" onclick="toggleLicht()" src="bilder/switch-down-small.png" alt="lichtschalter">
+            <img class="lichtschalter-aus" id="lichtschalter-aus" onclick="toggleLicht()" src="bilder/switch-up-small.png" alt="lichtschalter">
+            <img class="lichtschalter-an" id="lichtschalter-an" src="bilder/switch-down-small.png">
         </a>
 
         <a role="button" class="navbar-burger has-text-white" aria-label="menu" aria-expanded="false"
@@ -72,7 +73,7 @@
         <div class="row">
             <div class="column has-text-centered">
                 <div class="card">
-                    <img src="bilder/doggo.jpg" alt="hund mit tulpe" style="width:100%">
+                    <img class="kontaktbild" src="bilder/doggo.jpg" alt="hund mit tulpe" style="width:100%">
                     <div class="container">
                         <h2>Viviane</h2>
                         <br>
@@ -81,7 +82,7 @@
             </div>
             <div class="column has-text-centered">
                 <div class="card">
-                    <img src="bilder/katz.jpg" alt="kätzchen" style="width:100%">
+                    <img class="kontaktbild" src="bilder/katz.jpg" alt="kätzchen" style="width:100%">
                     <div class="container">
                         <h2>Lilly</h2>
                         <br>
@@ -90,7 +91,7 @@
             </div>
             <div class="column has-text-centered">
                 <div class="card">
-                    <img src="bilder/bunny.jpg" alt="häschen" style="width:100%">
+                    <img class="kontaktbild" src="bilder/bunny.jpg" alt="häschen" style="width:100%">
                     <div class="container">
                         <h2>Leonie</h2>
                         <br>
@@ -100,11 +101,28 @@
         </div>
 </div>
 <br>
-<footer class="footer">
+<footer class="footer" id="footer">
     <div class="content has-text-centered has-text-white is-large">
         <span class="icon">  <i class="fas fa-envelope"></i></span>
         <span class="icon">  <i class="fa-brands fa-instagram"></i></span>
     </div>
 </footer>
+<script>
+    const licht = document.getElementById("lampe-an");
+    const lichtAus = document.getElementById("lampe-aus");
+    const hintergrundHell = document.getElementById("navbar");
+    const footerHell = document.getElementById("footer");
+    const schalterOben = document.getElementById("lichtschalter-aus");
+    const schalterUnten = document.getElementById("lichtschalter-an");
+
+    function toggleLicht(){
+        licht.classList.toggle("on");
+        lichtAus.classList.toggle("off");
+        hintergrundHell.classList.toggle("backgroundLight");
+        footerHell.classList.toggle("footerLight");
+        schalterOben.classList.toggle("switch-off")
+        schalterUnten.classList.toggle("switch-on");
+    }
+</script>
 </body>
 </html>
