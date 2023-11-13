@@ -98,7 +98,13 @@ html, body {
 .footerLight {
     background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
 }
+
 .container {
     height: 80%;
     width: 90%;
+}
+
+.hintergrund {
+    background-image: url("bilder/Pfad.png");
+    background-size: 100% auto;
 }
