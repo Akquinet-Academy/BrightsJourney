@@ -9,11 +9,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-<nav class="navbar  is-transparent" role="navigation" aria-label="main navigation">
+<nav class="navbar  is-transparent" id="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-        <a class="navbar-item" href="index.html">
-            <img src="bilder/light-bulb.png" height="60" alt="gluehbirne">
-            <img class="lichtschalter" src="bilder/switch-down.png" alt="lichtschalter">
+        <a class="navbar-item">
+            <div class="glühbirnen">
+                <img class="gluehbirne-an" id="lampe-an" src="bilder/light-bulb.png" alt="gluehbirne">
+                <img class="gluehbirne-aus" id="lampe-aus" src="bilder/light-bulb-off.png" alt="gluehbirne">
+            </div>
+            <img class="lichtschalter" id="lichtschalter" onclick="toggleLicht()" src="bilder/switch-down-small.png" alt="lichtschalter">
         </a>
 
         <a role="button" class="navbar-burger has-text-white" aria-label="menu" aria-expanded="false"
@@ -61,25 +64,27 @@
     </div>
 </nav>
 <div class="about-section">
-    <h1 class="title" style="color: white">
+    <h1 class="title">
         Entwickelt von:
     </h1>
 </div>
+<div class="container">
         <div class="row">
             <div class="column has-text-centered">
                 <div class="card">
-                    <img src="bilder/schaf.jpg" alt="schäfchen" style="width:100%">
+                    <img src="bilder/doggo.jpg" alt="hund mit tulpe" style="width:100%">
                     <div class="container">
                         <h2>Viviane</h2>
+                        <br>
                     </div>
                 </div>
             </div>
-
             <div class="column has-text-centered">
                 <div class="card">
                     <img src="bilder/katz.jpg" alt="kätzchen" style="width:100%">
                     <div class="container">
                         <h2>Lilly</h2>
+                        <br>
                     </div>
                 </div>
             </div>
@@ -88,11 +93,13 @@
                     <img src="bilder/bunny.jpg" alt="häschen" style="width:100%">
                     <div class="container">
                         <h2>Leonie</h2>
+                        <br>
                     </div>
                 </div>
             </div>
         </div>
-
+</div>
+<br>
 <footer class="footer">
     <div class="content has-text-centered has-text-white is-large">
         <span class="icon">  <i class="fas fa-envelope"></i></span>
