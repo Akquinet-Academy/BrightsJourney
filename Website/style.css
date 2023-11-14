@@ -126,13 +126,13 @@ html, body {
     width: 90%;
 }
 
-.subtitle {
-    background: white;
-}
+/*.subtitle {*/
+/*    background: white;*/
+/*}*/
 
-.title {
-    background: white;
-}
+/*.title {*/
+/*    background: white;*/
+/*}*/
 
 .navbar-menu.is-active a.navbar-item,
 .navbar-menu.is-active .navbar-dropdown a.navbar-item {
