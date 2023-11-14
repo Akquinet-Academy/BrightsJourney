@@ -125,6 +125,15 @@ html, body {
     height: 100%;
     width: 90%;
 }
+
+.subtitle {
+    background: white;
+}
+
+.title {
+    background: white;
+}
+
 .navbar-menu.is-active a.navbar-item,
 .navbar-menu.is-active .navbar-dropdown a.navbar-item {
     color: purple !important;
