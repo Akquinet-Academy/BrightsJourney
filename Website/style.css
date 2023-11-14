@@ -84,9 +84,10 @@ html, body {
 
 .footer {
     background-color: rgb(60, 16, 83);
-    position: fixed;
+    /*position: fixed;*/
     bottom: 0;
     width: 100%;
+    /*height: 10%;*/
 }
 
 .navbar-dropdown::before {
@@ -121,9 +122,18 @@ html, body {
 }
 
 .container {
-    height: 80%;
+    height: 100%;
     width: 90%;
 }
+
+.subtitle {
+    background: white;
+}
+
+.title {
+    background: white;
+}
+
 .navbar-menu.is-active a.navbar-item,
 .navbar-menu.is-active .navbar-dropdown a.navbar-item {
     color: purple !important;
